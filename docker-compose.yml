@@ -1,6 +1,8 @@
 services:
     dev:
-        build: .
+        build:
+            context: .
+            dockerfile: dev.Dockerfile
         ports:
             - "5173:5173"
         volumes:
@@ -8,7 +10,9 @@ services:
             - /app/node_modules
     build:
         profiles: ["build"]
-        build: .
+        build:
+            context: .
+            dockerfile: dev.Dockerfile
         volumes:
             - .:/app
             - /app/node_modules
