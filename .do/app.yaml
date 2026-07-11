@@ -1,0 +1,11 @@
+name: jabulani-tradein
+region: fra
+static_sites:
+    - name: tradein
+      github:
+          repo: OWNER/jabulani-tradein # <- update to the actual GitHub repo
+          branch: main
+          deploy_on_push: true
+      build_command: npm install && npm run build
+      output_dir: dist
+      catchall_document: index.html
