@@ -603,8 +603,11 @@ export default function JabulaniReLife() {
                         className="jr-brandmark"
                         aria-label="Jabulani Express ReLife"
                     >
-                        <span className="jr-brandmark__word">JABULANI</span>
-                        <span className="jr-brandmark__express">EXPRESS</span>
+                        <img
+                            className="jr-brandmark__logo"
+                            src="./logo-horizontal.png"
+                            alt="Jabulani Express"
+                        />
                         <span className="jr-brandmark__divider" />
                         <span className="jr-brandmark__relife">ReLife</span>
                     </div>
@@ -1313,6 +1316,13 @@ const styles = `
     font-weight: 900;
     letter-spacing: 0.16em;
     color: var(--red);
+  }
+
+  .jr-brandmark__logo {
+    height: clamp(24px, 4vw, 30px);
+    width: auto;
+    display: block;
+    align-self: center;
   }
 
   .jr-brandmark__divider {
