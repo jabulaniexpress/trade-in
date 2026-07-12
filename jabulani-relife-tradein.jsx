@@ -1183,10 +1183,11 @@ export default function JabulaniReLife() {
 
             <footer className="jr-footer">
                 <div className="jr-shell">
-                    <div className="jr-brandmark jr-brandmark--footer">
-                        <span className="jr-brandmark__word">JABULANI</span>
-                        <span className="jr-brandmark__express">EXPRESS</span>
-                    </div>
+                    <img
+                        className="jr-brandmark__logo jr-brandmark__logo--footer"
+                        src="./logo-horizontal-dark.png"
+                        alt="Jabulani Express"
+                    />
                     <p>
                         ReLife by Jabulani Express — giving quality devices a
                         valuable second life.
@@ -1323,6 +1324,11 @@ const styles = `
     width: auto;
     display: block;
     align-self: center;
+  }
+
+  .jr-brandmark__logo--footer {
+    height: 36px;
+    margin-bottom: 14px;
   }
 
   .jr-brandmark__divider {
