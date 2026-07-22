@@ -801,6 +801,15 @@ export default function JabulaniReLife() {
                                     <span>No physical SIM tray</span>
                                 </Choice>
                             </div>
+                            <a
+                                className="jr-guide-link"
+                                href="https://jabulaniexpress.com/lla-physical-sim-guide/"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                What's an LLA physical SIM iPhone? Read the
+                                honest guide &rarr;
+                            </a>
                         </StepCard>
                     ) : null}
 
@@ -1189,7 +1198,11 @@ export default function JabulaniReLife() {
                         alt="Jabulani Express"
                     />
                     <p>
-                        ReLife by Jabulani Express — giving quality devices a
+                        ReLife by{" "}
+                        <a href="https://jabulaniexpress.com/">
+                            Jabulani Express
+                        </a>{" "}
+                        - giving quality devices a
                         valuable second life.
                     </p>
                     <small>
@@ -1783,6 +1796,17 @@ const styles = `
 
   .jr-two-choice {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .jr-guide-link {
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--red, #ca2a1e);
+    text-decoration: none;
+    border-bottom: 1.5px solid currentColor;
+    padding-bottom: 1px;
   }
 
   .jr-two-choice .jr-choice strong,
